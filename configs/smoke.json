@@ -1,0 +1,15 @@
+{
+  "synthetic": true,
+  "output": "results/smoke",
+  "rank": 4,
+  "epochs": 10,
+  "batch_size": 32,
+  "lr": 0.05,
+  "seed": 13,
+  "init_std": 0.01,
+  "n_train": 256,
+  "n_test": 128,
+  "feature_dim": 32,
+  "log_every": 1,
+  "eval_every": 1
+}

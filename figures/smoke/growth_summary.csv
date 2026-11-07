@@ -1,0 +1,2 @@
+run,pairs,initial_spectral_sum,final_spectral_sum,maximum_logged_spectral_sum,final_over_initial,logging_every_update
+results/smoke,1,0.0066611475879090835,0.0067661542927151775,0.0067661542927151775,1.0157640561810544,True

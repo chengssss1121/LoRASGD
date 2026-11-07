@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "steps": 2,
+  "epochs_completed": 0.5,
+  "elapsed_seconds": 2.3226562600029865,
+  "n_pairs": 21,
+  "maximum_scope": "every optimizer state",
+  "per_pair_max_spectral_sum": {
+    "conv1": 0.02685392469050442,
+    "layer1.0.conv1": 0.07850667528085215,
+    "layer1.0.conv2": 0.07782079224828044,
+    "layer1.1.conv1": 0.08146463754009965,
+    "layer1.1.conv2": 0.0738801016268273,
+    "layer2.0.conv1": 0.07959791738567486,
+    "layer2.0.conv2": 0.14399856193052146,
+    "layer2.0.downsample.0": 0.014401386732371292,
+    "layer2.1.conv1": 0.14504394485233554,
+    "layer2.1.conv2": 0.14298008088043834,
+    "layer3.0.conv1": 0.14649269115772165,
+    "layer3.0.conv2": 0.27260836557466883,
+    "layer3.0.downsample.0": 0.023104413496756467,
+    "layer3.1.conv1": 0.2646583710078451,
+    "layer3.1.conv2": 0.26727594241262564,
+    "layer4.0.conv1": 0.2739332233475346,
+    "layer4.0.conv2": 0.5239008189990404,
+    "layer4.0.downsample.0": 0.03838745232003094,
+    "layer4.1.conv1": 0.5292984940864262,
+    "layer4.1.conv2": 0.511626138952957,
+    "fc": 0.07188626015356905
+  },
+  "note": "Finite experiments diagnose factor growth; they do not prove a global bound or a convergence exponent."
+}

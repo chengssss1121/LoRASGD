@@ -1,0 +1,15 @@
+{
+  "features": "data/cifar10_resnet18_features.npz",
+  "output": "results/logistic_rank4_lr005_seed13",
+  "rank": 4,
+  "epochs": 60,
+  "batch_size": 512,
+  "lr": 0.05,
+  "seed": 13,
+  "init_std": 0.01,
+  "sampling": "iid",
+  "schedule": "constant",
+  "lambda_product": 0.0,
+  "log_every": 1,
+  "eval_every": 1
+}

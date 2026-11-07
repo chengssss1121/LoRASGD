@@ -1,0 +1,5 @@
+-r requirements.txt
+# Paper-era compatible pair. Install the appropriate CPU/CUDA wheels first;
+# see README.md. The code also uses stable APIs available in newer releases.
+torch==2.5.1
+torchvision==0.20.1

@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "completed_updates": 80,
+  "requested_updates": 80,
+  "initial_spectral_sum": 0.0066611475879090835,
+  "final_spectral_sum": 0.0067661542927151775,
+  "max_logged_spectral_sum": 0.0067661542927151775,
+  "max_logged_imbalance_drift": 1.7221576329109569e-06,
+  "log_every": 1,
+  "maximum_covers_every_update": true,
+  "growth_ratio_final_over_initial": 1.0157640561810544,
+  "elapsed_seconds": 0.015778083936311305,
+  "theory_cap_C_T": null,
+  "logged_cap_exceeded": null,
+  "final_train": {
+    "loss": 2.30770848431636,
+    "accuracy": 0.09765625,
+    "full_factor_gradient_sq": 5.15530147891572e-06
+  }
+}

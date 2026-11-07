@@ -1,0 +1,2 @@
+run,pairs,initial_spectral_sum,final_spectral_sum,maximum_logged_spectral_sum,final_over_initial,logging_every_update
+examples/theory_step_smoke,1,0.006661147587909082,0.006661147587909096,0.006661147587909096,1.000000000000002,True

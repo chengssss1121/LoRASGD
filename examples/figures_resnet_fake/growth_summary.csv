@@ -1,0 +1,2 @@
+run,pairs,initial_spectral_sum,final_spectral_sum,maximum_logged_spectral_sum,final_over_initial,logging_every_update
+examples/resnet_fake_smoke,21,3.7870213216141138,3.7877201946770813,3.7877201946770813,1.0001845442641104,True

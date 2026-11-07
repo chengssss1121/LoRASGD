@@ -1,0 +1,290 @@
+{
+  "arguments": {
+    "data_root": "data",
+    "output": "examples/resnet_fake_smoke",
+    "rank": 20,
+    "init_std": 0.01,
+    "epochs": 1,
+    "batch_size": 4,
+    "lr": 0.04,
+    "seed": 13,
+    "sampling": "iid",
+    "weights": "none",
+    "cifar_stem": false,
+    "device": "cpu",
+    "num_workers": 0,
+    "log_every": 1,
+    "eval_every": 1,
+    "eval_limit": 8,
+    "max_train": 16,
+    "max_test": 8,
+    "max_steps": 2,
+    "download": false,
+    "fake_data": true
+  },
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "torch": "2.5.1+cpu",
+  "torchvision": "0.20.1+cpu",
+  "device": "cpu",
+  "optimizer": {
+    "name": "SGD",
+    "lr": 0.04,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "gradient_clipping": false,
+    "normalization": false
+  },
+  "adapter_scaling": 1.0,
+  "initialization": {
+    "A": "Gaussian",
+    "std": 0.01,
+    "B": "zeros"
+  },
+  "batchnorm": "eval mode: running statistics and affine parameters frozen",
+  "data_preprocessing": "32x32 ToTensor plus fixed CIFAR-10 mean/std; no random augmentation",
+  "sampling": "iid",
+  "steps_per_epoch": 4,
+  "dataset": "synthetic torchvision FakeData (execution check only)",
+  "train_size": 16,
+  "test_size": 8,
+  "trainable_parameters": 728900,
+  "pairs": [
+    {
+      "name": "conv1",
+      "A_shape": [
+        20,
+        147
+      ],
+      "B_shape": [
+        64,
+        20
+      ]
+    },
+    {
+      "name": "layer1.0.conv1",
+      "A_shape": [
+        20,
+        576
+      ],
+      "B_shape": [
+        64,
+        20
+      ]
+    },
+    {
+      "name": "layer1.0.conv2",
+      "A_shape": [
+        20,
+        576
+      ],
+      "B_shape": [
+        64,
+        20
+      ]
+    },
+    {
+      "name": "layer1.1.conv1",
+      "A_shape": [
+        20,
+        576
+      ],
+      "B_shape": [
+        64,
+        20
+      ]
+    },
+    {
+      "name": "layer1.1.conv2",
+      "A_shape": [
+        20,
+        576
+      ],
+      "B_shape": [
+        64,
+        20
+      ]
+    },
+    {
+      "name": "layer2.0.conv1",
+      "A_shape": [
+        20,
+        576
+      ],
+      "B_shape": [
+        128,
+        20
+      ]
+    },
+    {
+      "name": "layer2.0.conv2",
+      "A_shape": [
+        20,
+        1152
+      ],
+      "B_shape": [
+        128,
+        20
+      ]
+    },
+    {
+      "name": "layer2.0.downsample.0",
+      "A_shape": [
+        20,
+        64
+      ],
+      "B_shape": [
+        128,
+        20
+      ]
+    },
+    {
+      "name": "layer2.1.conv1",
+      "A_shape": [
+        20,
+        1152
+      ],
+      "B_shape": [
+        128,
+        20
+      ]
+    },
+    {
+      "name": "layer2.1.conv2",
+      "A_shape": [
+        20,
+        1152
+      ],
+      "B_shape": [
+        128,
+        20
+      ]
+    },
+    {
+      "name": "layer3.0.conv1",
+      "A_shape": [
+        20,
+        1152
+      ],
+      "B_shape": [
+        256,
+        20
+      ]
+    },
+    {
+      "name": "layer3.0.conv2",
+      "A_shape": [
+        20,
+        2304
+      ],
+      "B_shape": [
+        256,
+        20
+      ]
+    },
+    {
+      "name": "layer3.0.downsample.0",
+      "A_shape": [
+        20,
+        128
+      ],
+      "B_shape": [
+        256,
+        20
+      ]
+    },
+    {
+      "name": "layer3.1.conv1",
+      "A_shape": [
+        20,
+        2304
+      ],
+      "B_shape": [
+        256,
+        20
+      ]
+    },
+    {
+      "name": "layer3.1.conv2",
+      "A_shape": [
+        20,
+        2304
+      ],
+      "B_shape": [
+        256,
+        20
+      ]
+    },
+    {
+      "name": "layer4.0.conv1",
+      "A_shape": [
+        20,
+        2304
+      ],
+      "B_shape": [
+        512,
+        20
+      ]
+    },
+    {
+      "name": "layer4.0.conv2",
+      "A_shape": [
+        20,
+        4608
+      ],
+      "B_shape": [
+        512,
+        20
+      ]
+    },
+    {
+      "name": "layer4.0.downsample.0",
+      "A_shape": [
+        20,
+        256
+      ],
+      "B_shape": [
+        512,
+        20
+      ]
+    },
+    {
+      "name": "layer4.1.conv1",
+      "A_shape": [
+        20,
+        4608
+      ],
+      "B_shape": [
+        512,
+        20
+      ]
+    },
+    {
+      "name": "layer4.1.conv2",
+      "A_shape": [
+        20,
+        4608
+      ],
+      "B_shape": [
+        512,
+        20
+      ]
+    },
+    {
+      "name": "fc",
+      "A_shape": [
+        20,
+        512
+      ],
+      "B_shape": [
+        10,
+        20
+      ]
+    }
+  ],
+  "metrics": "float64 CPU SVD/QR on stored factor matrices, not power iteration",
+  "state_convention": "step=0 is initialization; step=t is after t joint optimizer updates",
+  "loss_convention": "batch_loss at step=t was computed before update t",
+  "reproduction_note": "Framework adaptation. Paper does not fully specify vision A std, backbone stem, or preprocessing.",
+  "script_sha256": "432976aa2d96e292d2cf61438f64851ecfad3dfb71e1f98283a9d085e6e4e3f5"
+}

@@ -1,0 +1,9 @@
+{
+  "runs": [
+    "results/smoke"
+  ],
+  "seed_band": "mean plus/minus one sample standard deviation",
+  "aggregation": "sum over factor pairs, separately summing each pair's squared spectral norm",
+  "not_global_stacked_spectral_norm": true,
+  "no_growth_exponent_fitted": true
+}
